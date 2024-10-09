@@ -22,7 +22,7 @@ public class Atan : MonoBehaviour
     private void Update()
     {
 
-        PlayerMove();
+       // PlayerMove();
         PlayerRotation();
     }
 
