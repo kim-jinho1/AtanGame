@@ -15,15 +15,13 @@ public class EnemyMove : MonoBehaviour
         _ri2 = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         Move();
     }
     private void Move()
     {
-        float h = Input.GetAxis("Vertical");
-        float v = Input.GetAxis("Horizontal");
-        _moveDir = new Vector2(v, h);
+        _moveDir = new Vector2(-2, 0);
         _ri2.velocity = _moveDir.normalized * _speed;
     }
 }
